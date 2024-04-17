@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <!-- Aquí puedes colocar cualquier contenido que desees dentro del FrameLayout -->
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="191dp"
+            android:layout_height="195dp"
+            app:srcCompat="@drawable/logo"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="220sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="Introduzca su usuario"
+            android:inputType="textPersonName"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="220sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/white"
+            android:hint="Introduzca su contraseña"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/Inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#D2181F"
+            android:text="Inicio"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/crearcuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#D2181F"
+            android:text="Crear Cuenta"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="240dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

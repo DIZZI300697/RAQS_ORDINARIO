@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+    <!-- Imagen para la categoría "Monitores" -->
+    <ImageView
+        android:id="@+id/imageViewMonitores"
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="openMonitoresActivity"
+        android:src="@drawable/monitores" />
+
+    <!-- Imagen para la categoría "Teclados" -->
+    <ImageView
+        android:id="@+id/imageViewTeclados"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="openTecladosActivity"
+        android:src="@drawable/teclado" />
+
+    <!-- Imagen para la categoría "Sillas" -->
+    <ImageView
+        android:id="@+id/imageViewSillas"
+        android:layout_width="wrap_content"
+        android:layout_height="183dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="openSillasActivity"
+        android:src="@drawable/sillas" />
+
+</LinearLayout>

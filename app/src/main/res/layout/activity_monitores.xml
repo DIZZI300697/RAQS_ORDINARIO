@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/product1Image"
+        android:layout_width="330dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="Producto 1"
+        android:onClick="openInfoActivity"
+        android:src="@drawable/logoasus" />
+
+    <!-- Botón para regresar -->
+
+    <ImageView
+        android:id="@+id/product2Image"
+        android:layout_width="330dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/product1Image"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="Producto 2"
+        android:onClick="openInfoActivity"
+        android:src="@drawable/logogygabite" />
+
+    <ImageView
+        android:id="@+id/product3Image"
+        android:layout_width="330dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/product2Image"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:contentDescription="Producto 3"
+        android:onClick="openInfoActivity"
+        android:src="@drawable/logomsi" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product3Image"
+        android:layout_marginTop="5dp"
+        android:text="Regresar" />
+
+</RelativeLayout>
