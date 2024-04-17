@@ -42,6 +42,7 @@
         <!-- Otras actividades -->
         <activity android:name=".InfoActivity" />
         <activity android:name=".PagosActivity" />
+        <activity android:name=".Producto" />
 
     </application>
 

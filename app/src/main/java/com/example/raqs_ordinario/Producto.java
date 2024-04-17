@@ -1,4 +1,4 @@
-package com.example.ordinario_randyquijano;
+package com.example.raqs_ordinario;
 
 public class Producto {
     private String tipo;

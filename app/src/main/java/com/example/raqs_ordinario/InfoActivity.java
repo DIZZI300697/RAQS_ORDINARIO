@@ -1,13 +1,16 @@
 package com.example.raqs_ordinario;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.raqs_ordinario.Producto;
+import com.example.raqs_ordinario.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +25,7 @@ public class InfoActivity extends AppCompatActivity {
     private double price; // Precio del producto
 
     // Lista para mantener los productos en el carrito
-    private List<com.example.ordinario_randyquijano.Producto> carritoProductos = new ArrayList<>();
+    private final List<Producto> carritoProductos = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,14 +83,9 @@ public class InfoActivity extends AppCompatActivity {
 
         // Manejador de eventos para el botón de pagar
         payButton.setOnClickListener(new View.OnClickListener() {
-            class PagosActivity {
-            }
-
             @Override
             public void onClick(View v) {
-                // Ir a PagosActivity
-                Intent intent = new Intent(InfoActivity.this, PagosActivity.class);
-                startActivity(intent);
+                // Aquí iría la lógica para procesar el pago
             }
         });
 
@@ -96,7 +94,14 @@ public class InfoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Agregar el producto al carrito
-                carritoProductos.add(new com.example.ordinario_randyquijano.Producto(productDescription.getText().toString(), quantity, price));
+                Producto nuevoProducto = new Producto(productDescription.getText().toString(), quantity, price);
+                carritoProductos.add(nuevoProducto);
+
+                // Mostrar información sobre el producto agregado en el registro
+                Log.d("InfoActivity", "Producto agregado al carrito: " + nuevoProducto.getTipo() + ", Cantidad: " + nuevoProducto.getCantidad() + ", Precio: $" + nuevoProducto.getPrecio());
+
+                // También puedes mostrar un mensaje en pantalla para confirmar que se agregó el producto
+                // Toast.makeText(InfoActivity.this, "Producto agregado al carrito", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -149,4 +154,3 @@ public class InfoActivity extends AppCompatActivity {
         totalPriceText.setText("Precio: $" + price);
     }
 }
-

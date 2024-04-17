@@ -1,6 +1,6 @@
 package com.example.raqs_ordinario;
 
-import com.example.ordinario_randyquijano.Producto;
+import com.example.raqs_ordinario.Producto;
 
 import java.util.ArrayList;
 import java.util.List;

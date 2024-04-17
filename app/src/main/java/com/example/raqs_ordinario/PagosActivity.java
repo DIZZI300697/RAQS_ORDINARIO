@@ -1,4 +1,4 @@
-
+package com.example.raqs_ordinario;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.raqs_ordinario.CarritoSingleton;
-import com.example.ordinario_randyquijano.Producto;
+import com.example.raqs_ordinario.Producto;
 import com.example.raqs_ordinario.R;
 
 import java.util.List;
