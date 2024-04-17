@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo3"
     android:padding="16dp"
     tools:context=".PagosActivity">
 
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Productos en el carrito:"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -21,6 +23,7 @@
         android:layout_below="@id/carritoTextView"
         android:layout_marginTop="16dp"
         android:text="Total a pagar: $0.00"
+        android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -29,17 +32,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/totalTextView"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Pagar"
-        android:layout_centerHorizontal="true"/>
+        android:backgroundTint="#66BB6A"
+        android:text="Pagar" />
 
     <Button
         android:id="@+id/returnButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pagarButton"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Regresar"
-        android:layout_centerHorizontal="true"/>
+        android:backgroundTint="#66BB6A"
+        android:text="Regresar" />
 
 </RelativeLayout>
